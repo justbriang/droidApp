@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Droid Deserts"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+
+        android:text="Choose Desert"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    <ImageView
+        android:id="@+id/donutImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="loadDonut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/icreamImg"
+        app:layout_constraintLeft_toLeftOf="@+id/donutTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/donut" />
+
+    <TextView
+        android:id="@+id/donutTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Dunuts are glazed and sprinkled with candy"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@id/donutImg"
+        android:onClick="loadDonut"
+        app:layout_constraintBottom_toTopOf="@+id/icreamImg"
+
+        app:layout_constraintStart_toEndOf="@+id/donutImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icreamImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/donutTv"
+        android:onClick="loadIcecream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donutImg"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/icecream" />
+
+    <TextView
+        android:id="@+id/iceCreamTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Icecream sandwiches have chocolate and vanila filling "
+        android:onClick="loadIcecream"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/frogoImg"
+        app:layout_constraintLeft_toRightOf="@id/icreamImg"
+
+        app:layout_constraintStart_toEndOf="@id/icreamImg"
+        app:layout_constraintTop_toBottomOf="@+id/donutImg"
+
+        />
+
+    <ImageView
+        android:id="@+id/frogoImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="loadFroyo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/frogoTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icreamImg"
+
+
+        app:srcCompat="@drawable/froyo" />
+
+    <TextView
+        android:id="@+id/frogoTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Froyo is a premium self serve frozen yorgurt"
+        android:textColor="@color/colorPrimary"
+        android:onClick="loadFroyo"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/frogoImg"
+        app:layout_constraintStart_toEndOf="@id/frogoImg"
+        app:layout_constraintTop_toBottomOf="@+id/icreamImg"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

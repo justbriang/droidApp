@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.droidapp.MainActivity">
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="5"
+        android:title="@string/about_us"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_order"
+        android:orderInCategory="1"
+        android:title="@string/order"
+        android:icon="@drawable/ic_order"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_status"
+        android:orderInCategory="3"
+        android:title="@string/status"
+        android:icon="@drawable/ic_status"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_call"
+        android:orderInCategory="2"
+        android:title="@string/call"
+        android:icon="@drawable/ic_call_us"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_Location"
+        android:orderInCategory="3"
+        android:title="@string/locate_us"
+        android:icon="@drawable/ic_info_black_24dp"
+        app:showAsAction="never" />
+
+</menu>
